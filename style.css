@@ -232,6 +232,40 @@ max-width: 100%;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
+.extra-info-section {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.info-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.info-text {
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.info-list li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.info-list li::before {
+  content: \"✔️\";
+  position: absolute;
+  left: 0;
+}
 
 .projects-section {
   padding: 60px 0;
@@ -254,6 +288,7 @@ max-width: 100%;
 .project-card {
   border: none;
   border-radius: 12px;
+  margin-bottom: 20px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
